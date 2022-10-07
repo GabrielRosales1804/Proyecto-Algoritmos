@@ -1,0 +1,20 @@
+Algoritmo sin_titulo
+	Definir v1,p1,p2,p3 Como Entero
+	Escribir 'Escribe el valor al que quieres llegar'
+	Leer v1
+	Si v1<=0 Entonces
+		Escribir 'Elige un valor mayor a 0'
+	SiNo
+		p1 <- 0
+		p2 <- 1
+		Mientras v1>=p3 Hacer
+			Repetir
+				p3 <- p1+p2
+				p1 <- p2
+				p2 <- p3
+				Escribir p1
+			Hasta Que v1<=p3
+		FinMientras
+		Escribir 'Este es tu resultado: ',p1
+	FinSi
+FinAlgoritmo
