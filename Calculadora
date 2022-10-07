@@ -1,0 +1,85 @@
+Algoritmo Proyecto
+	Segun variable_numerica Hacer
+		1:
+			secuencia_de_acciones_1
+		2:
+			secuencia_de_acciones_2
+		3:
+			Escribir 'Cual es la accion que quiere hacer Suma/Resta/Multiplicacion/Division/Potencia'
+			Escribir 'Escribe 1 si es Suma escribe 2 si es Resta escribe 3 si es Multiplicacion escribe 4 si es Division escribe 5 si es Potencia'
+			Leer tipodeaccion
+			Segun tipodeaccion  Hacer
+				1:
+					Escribir 'Escogiste Suma'
+					primernumero <- 0
+					registrodenumeros <- 0
+					resultado <- ''
+					Repetir
+						Escribir 'Ingrese Un Numero'
+						Leer primernumero
+						registrodenumeros <- registrodenumeros+primernumero
+						Escribir 'Desea Ingresar Continuar si/no'
+						Leer resultado
+					Hasta Que resultado='no'
+					Escribir 'Tu Resultado Es ',registrodenumeros
+				2:
+					Escribir 'Escogiste Resta'
+					primernumero <- 0
+					registrodenumeros <- 0
+					resultado <- ''
+					Repetir
+						Escribir 'Ingrese Un Numero'
+						Leer primernumero
+						registrodenumeros <- registrodenumeros-primernumero
+						Escribir 'Desea Ingresar Continuar si/no'
+						Leer resultado
+					Hasta Que resultado='no'
+					Escribir 'Tu Resultado Es ',registrodenumeros
+				3:
+					Escribir 'Escogiste Multiplicacion'
+					primernumero <- 0
+					registrodenumeros <- 0
+					resultado <- ''
+					Repetir
+						Escribir 'Ingrese Un Numero'
+						Leer primernumero
+						registrodenumeros <- primernumero*primernumero
+						Escribir 'Desea Ingresar Continuar si/no'
+						Leer resultado
+					Hasta Que resultado='no'
+					Escribir 'Tu Resultado Es ',registrodenumeros
+				4:
+					Escribir 'Escogiste Division'
+					primernumero <- 0
+					registrodenumeros <- 0
+					resultado <- ''
+					Repetir
+						Escribir 'Ingrese Un Numero'
+						Leer primernumero
+						registrodenumeros <- primernumero/primernumero
+						Escribir 'Desea Ingresar Continuar si/no'
+						Leer resultado
+					Hasta Que resultado='no'
+					Escribir 'Tu Resultado Es ',registrodenumeros
+				5:
+					Escribir 'Escogiste Potencia'
+					primernumero <- 0
+					registrodenumeros <- 0
+					resultado <- ''
+					Escribir 'Ingrese Un Numero'
+					Leer primernumero
+					Repetir
+						Escribir 'A Que Numeros Lo Elevo'
+						Leer elevacion
+						registrodenumeros <- elevacion*(primernumero*primernumero)
+						Escribir 'Desea Ingresar Otro Numero si/no'
+						Leer resultado
+					Hasta Que resultado='no'
+					Escribir 'Tu Resultado Es ',registrodenumeros
+				De Otro Modo:
+					Escribir 'Opcion no valida'
+			FinSegun
+		De Otro Modo:
+			Escribir "Opcion erronea"
+	Fin Segun
+FinAlgoritmo
